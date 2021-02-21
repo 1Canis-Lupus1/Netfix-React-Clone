@@ -1,0 +1,20 @@
+/* body{
+    background-color: black;
+} */
+
+.row-poster{
+    display:flex;
+    justify-content:space-between;
+}
+
+.row-poster-image{
+    object-fit:contain;
+    width: 100%;
+    max-height:100px;
+    margin-right:10px;
+    transition: transform 450ms;
+}
+
+.row-poster-image:hover{
+    transform: scale(1.08);
+}
