@@ -29,8 +29,9 @@ function Row(props) {
           {movies.map((movie) => {
             return (
               <img
+                key={movie.id}
                 className="row-poster-image"
-                src={`${basePosterUrl}${movie.poster_path}`}
+                src={`${basePosterUrl}${props.isLargeRow?movie.poster_path:movie.backdrop_path}`}
                 alt={movie.original_title}
               />
             );

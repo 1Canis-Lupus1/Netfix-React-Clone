@@ -11,6 +11,12 @@
     justify-content:space-between;
     overflow-y:hidden;
     overflow-x:scroll;
+    padding:10px;
+}
+
+/* For telling all browsers to Not Display the scroll bar but keep its functonality */
+.row-poster::-webkit-scrollbar {
+    display: none;
 }
 
 .row-poster-image{

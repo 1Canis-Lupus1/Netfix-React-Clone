@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">Netflix Clone</header>
       <div className="App-body">
         {/* <h1>Trending Now</h1> */}
-        <Row title="Trending Now" fetchUrl={requests.trending} />
+        <Row title="Trending Now" fetchUrl={requests.trending} isLargeRow />
         <Row title="Popular" fetchUrl={requests.popular} />
         <Row title="Up-Coming " fetchUrl={requests.upcomming} />
         <Row title="Top Rated " fetchUrl={requests.topRated} />
