@@ -3,9 +3,9 @@ const baseUrl="https://api.themoviedb.org/3";
 
 const requests={
     trending:`${baseUrl}/trending/all/day?api_key=${Key}`,
+    popular:`${baseUrl}/movie/popular?api_key=${Key}&language=en-US&page=1`,
     upcomming:`${baseUrl}/movie/upcoming?api_key=${Key}&language=en-US&page=1`,
     topRated:`${baseUrl}/movie/top_rated?api_key=${Key}&language=en-US&page=1`,
-    popular:`${baseUrl}/movie/popular?api_key=${Key}&language=en-US&page=1`,
     nowPlaying:`${baseUrl}/movie/now_playing?api_key=${Key}&language=en-US&page=1`,
     latest:`${baseUrl}/movie/latest?api_key=${Key}&language=en-US`,
 

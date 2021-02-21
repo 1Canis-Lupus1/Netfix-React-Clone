@@ -11,6 +11,10 @@ function App() {
         {/* <h1>Trending Now</h1> */}
         <Row title="Trending Now" fetchUrl={requests.trending} />
         <Row title="Popular" fetchUrl={requests.popular} />
+        <Row title="Up-Coming " fetchUrl={requests.upcomming} />
+        <Row title="Top Rated " fetchUrl={requests.topRated} />
+        <Row title="Now Playing" fetchUrl={requests.nowPlaying} />
+        {/* <Row title="Latest" fetchUrl={requests.latest} /> */}
       </div>
     </div>
   );
