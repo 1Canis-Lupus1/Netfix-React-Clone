@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Row from "./components/Row";
+import requests from "./request"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Netflix Clone
       </header>
+      <div className="App-body">
+        {/* <h1>Trending Now</h1> */}
+        <Row title="Trending Now" fetchUrl={requests.trending} />
+        <Row title="Popular" fetchUrl={requests.popular} />
+      </div>
     </div>
   );
 }
