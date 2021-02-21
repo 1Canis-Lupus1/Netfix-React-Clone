@@ -2,9 +2,15 @@
     background-color: black;
 } */
 
+.row{
+    text-align: left;
+}
+
 .row-poster{
     display:flex;
     justify-content:space-between;
+    overflow-y:hidden;
+    overflow-x:scroll;
 }
 
 .row-poster-image{
