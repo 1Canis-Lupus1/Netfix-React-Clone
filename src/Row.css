@@ -4,6 +4,7 @@
 
 .row{
     text-align: left;
+    margin-left:10px;
 }
 
 .row-poster{
@@ -29,4 +30,12 @@
 
 .row-poster-image:hover{
     transform: scale(1.08);
+}
+
+.large{
+    max-height:250px;
+}
+
+.large:hover{
+    transform: scale(1.09);
 }

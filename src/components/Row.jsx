@@ -30,7 +30,7 @@ function Row(props) {
             return (
               <img
                 key={movie.id}
-                className="row-poster-image"
+                className={`row-poster-image ${props.isLargeRow && "large"}`}
                 src={`${basePosterUrl}${props.isLargeRow?movie.poster_path:movie.backdrop_path}`}
                 alt={movie.original_title}
               />
@@ -38,12 +38,6 @@ function Row(props) {
           })}
         </div>
       </div>
-
-      {/* {Container}=>posters */}
-      {console.log(movies)}
-      {/* <p>{movies.map(each=>{
-                return each
-            })}</p> */}
     </div>
   );
 }
