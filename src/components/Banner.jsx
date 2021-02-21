@@ -29,7 +29,12 @@ function Banner(props) {
             {/* {Title} */}
             <h1>{movie?.title || movie?.name || movie?.original_name}</h1>
             {/* {div=>2 buttons} */}
+            <div className="banner-btn">
+                <button className="btn">Play</button>
+                <button className="btn">My List</button>
+            </div>
             {/* {description} */}
+            <h1 className="banner-desc">{movie.overview}</h1>
         </div>
         </header>
     )
