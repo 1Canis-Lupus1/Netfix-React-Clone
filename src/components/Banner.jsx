@@ -51,6 +51,8 @@ function Banner(props) {
         {/* {description} */}
         <h1 className="banner-desc">{truncate(movie?.overview, 150)}</h1>
       </div>
+
+      <div className="banner-fadebtn"></div>
     </header>
   );
 }
